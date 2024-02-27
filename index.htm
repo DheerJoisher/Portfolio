@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dheer's Portfolio</title>
+  <title>Portfolio</title>
 <style>
 /* General styling */
 body {
@@ -42,6 +42,10 @@ nav ul li a:hover {
   color: #ff6600;
 }
 
+#about {
+  display: flex; flex-direction: row-reverse;
+}
+
 .section {
   padding: 40px;
   margin-bottom: 40px;
@@ -71,7 +75,22 @@ nav ul li a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+#dheerimg{
+  
+  height: 250px; width:250px; border-radius: 50%;
+}
 /* Responsive design */
+
+@media (max-width: 700px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #dheerimg{
+    height: 200px; width:200px; border-radius: 50%;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   header {
     padding: 10px;
@@ -89,13 +108,17 @@ nav ul li a:hover {
   .section {
     padding: 30px;
   }
+
+  
+
 }
+
 
 </style>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header style=" ">
+  <header>
     <div>
     <h1 style="">Dheer Joisher</h1>
 
@@ -114,10 +137,13 @@ nav ul li a:hover {
     </div>
   </header>
   
-  <section id="about" class="section" style="display: flex; flex-direction: row-reverse;">
+  <section id="about" class="section" >
     <div>
-      <img src="https://media.licdn.com/dms/image/D4D03AQEK3Q_GIBoxuA/profile-displayphoto-shrink_800_800/0/1705038962378?e=1714608000&v=beta&t=9LwMk28B1GtAOyBZ7hTXBpkFtWcjIaxMcEWSdJqFYBE" style="height: 250px; width:250px; border-radius: 50%;"  alt="" align="right">
-  
+      <img id="dheerimg" src="https://media.licdn.com/dms/image/D4D03AQEK3Q_GIBoxuA/profile-displayphoto-shrink_800_800/0/1705038962378?e=1714608000&v=beta&t=9LwMk28B1GtAOyBZ7hTXBpkFtWcjIaxMcEWSdJqFYBE"  alt="">
+
+    </div>
+    <div>
+
       <h2>About Me</h2>
       <p style="font-size: 18px;">Currently studying at Veermata Jijabai Technological Institute, I have a passion for Coding. Curious by nature to learn about different technologies and then apply them in my services at different places. I have started Volunteering at different events from the age of 12, which include educational summits held by our Samaj(Native Society), local cultural and sports events and many other events at school. I have also volunteered for Local vaccination drives after the Pandemic. As I prepare to enter the corporate world in the near future, I am excited to contribute to the fullest with all the skills I have and I will be pursuing in the coming years.</p>
     </div>
@@ -126,7 +152,7 @@ nav ul li a:hover {
 <section id="education" class="section">
     <h2>Education</h2>
 <div class="education">
-<img src="https://www.nesnationalpublicschool.org/img/logo-default-446x120.png" align="right" height=100>
+<img src="https://www.nesnationalpublicschool.org/img/logo-default-446x120.png" text-align="right" height=100>
       <h3>NES National Public School</h3>
  <p>Kindergarden, Primary and Secondary Schooling<br>2008-2021</p>
     </div>
